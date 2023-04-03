@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>RestaurantManagementSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+   <welcome-file>Admin.jsp</welcome-file>
+    <welcome-file>checkout.jsp</welcome-file>
+    <welcome-file>Customer.jsp</welcome-file>
+    <welcome-file>Error.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>logout.jsp</welcome-file>
+    <welcome-file>MenuForm.jsp</welcome-file>
+    <welcome-file>MenuList.jsp</welcome-file>
+    <welcome-file>order.jsp</welcome-file>
+    <welcome-file>post.jsp</welcome-file>
+    <welcome-file>SignUp.jsp</welcome-file>
+    <welcome-file>success.jsp</welcome-file>
+    <welcome-file>thank.jsp</welcome-file>
+    <welcome-file>AboutUs.jsp</welcome-file>
+    <welcome-file>MenuListCust.jsp</welcome-file> 
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file> 
+  </welcome-file-list>
+  <session-config>
+  <session-timeout>20</session-timeout>
+</session-config>
+ <!--  <servlet>
+  <servlet-name>AdminValidationServlet</servlet-name>
+  <servlet-class>com.RestaurantManagement.admin.control.AdminValidationServlet</servlet-class>
+  </servlet>-->
+  <servlet>
+  <servlet-name>MenuServlet</servlet-name>
+  <servlet-class>com.RestaurantManagement.admin.control.MenuServlet</servlet-class>
+  </servlet>
+   <servlet>
+  <servlet-name>DbConnection</servlet-name>
+  <servlet-class>com.RestaurantManagement.db.DbConnection</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>MenuDAO</servlet-name>
+  <servlet-class>com.RestaurantManagement.db.MenuDAO</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>Items</servlet-name>
+  <servlet-class>demo.Items</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>MenuItems</servlet-name>
+  <servlet-class>demo.MenuItems</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>Path</servlet-name>
+  <servlet-class>demo.Path</servlet-class>
+  </servlet>
+ <!--  <servlet-mapping>
+  <servlet-name>AdminValidationServlet</servlet-name>
+  <url-pattern>/AdminValidationServlet</url-pattern>
+  </servlet-mapping> -->
+  <servlet-mapping>
+  <servlet-name>DbConnection</servlet-name>
+  <url-pattern>/DbConnection</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>MenuServlet</servlet-name>
+  <url-pattern>/MenuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>MenuDAO</servlet-name>
+  <url-pattern>/MenuDAO</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>Items</servlet-name>
+  <url-pattern>/Items</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>MenuItems</servlet-name>
+  <url-pattern>/MenuItems</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>Path</servlet-name>
+  <url-pattern>/Path</url-pattern>
+  </servlet-mapping> 
+  
+</web-app>
